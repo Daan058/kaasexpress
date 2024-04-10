@@ -1,0 +1,356 @@
+/* Base Styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+header {
+    background-color: #333399;
+    font-weight: bolder;
+    color: white;
+    padding: 30px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    font-weight: bolder;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 10%;
+}
+
+.nav-search {
+    flex-grow: 1;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input {
+    width: 40%;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+}
+.zoek{
+    background-color: #cc8400;
+    color: w;
+
+}
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item,
+.nav-item:hover {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    position: relative;
+    right: 10%;
+}
+
+.nav-item:hover {
+    background-color: rgb(87, 76, 214);
+    border-radius: 10px;
+}
+
+.nav-item-btn {
+    background-color: #FFA500;
+    color: #333399;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item-btn:hover {
+    background-color: #cc8400;
+}
+
+.highlight {
+    color: #FFA500;
+}
+
+.highlight2 {
+    color: #333399;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #FFA500;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.newsletter,
+.menu,
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter {
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.newsletter input[type="email"],
+.newsletter input[type="submit"] {
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.newsletter input[type="submit"] {
+    background-color: #000066;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    margin-right: 30px;
+}
+
+.menu-column {
+    margin-left: 30px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media .icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Product Styles */
+.producten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px;
+    box-sizing: border-box;
+    width: calc(33.333% - 120px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product:nth-child(5n) {
+    margin-right: 0;
+}
+
+.product-name {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #666;
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #008000;
+    margin-bottom: 10px;
+}
+
+.productalgemeen {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    margin: 5vw;
+}
+
+/* Inlog Page Styles  */
+
+
+.form-panel {
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+    display: flex;
+    gap: 100px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.form-container {
+    background: #f3f3f3;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+
+}
+
+.form-header {
+    font-size: 2em;
+
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 1.1em;
+
+}
+
+.form-group button {
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1em;
+
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: #FFA500;
+
+}
+
+.register-btn {
+    background-color: #333399;
+
+}
+
+/* Admin Page Styles */
+.formulieren {
+    display: flex;
+    margin: 5%;
+    margin-top: 0%;
+}
+
+.formulieradmin {
+    margin: 2%;
+    width: 250px;
+    flex-direction: column;
+}
+
+.pruductenadmin {
+    font-size: 100%;
+    color: white;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .product {
+        width: calc(50% - 80px);
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu,
+    .social-media {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .menu-column {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    header,
+    .navbar {
+        padding: 30px 0;
+    }
+
+    .nav-logo {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .nav-search {
+        width: 100%;
+    }
+
+    .search-input {
+        width: 50%;
+
+    }
+
+    .nav-items {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+
+        margin: 20px 0;
+
+    }
+}
