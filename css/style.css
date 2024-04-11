@@ -214,13 +214,13 @@ footer {
 
 
 .form-panel {
-    justify-content: center;
-    align-items: center;
-    margin: 200px;
-    display: flex;
-    gap: 100px;
-    width: 80%;
-    max-width: 1000px;
+        justify-content: center;
+        align-items: center;
+        margin: 200px;
+        display: flex;
+        gap: 100px;
+        width: 80%;
+        max-width: 1000px;
 }
 
 .form-container {
@@ -294,7 +294,6 @@ footer {
     font-size: 100%;
     color: white;
 }
-
 
 /* Responsive Design */
 @media (max-width: 1200px) {

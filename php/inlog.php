@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 include ("../connection.php");
 
@@ -13,17 +12,18 @@ $query->execute();
 $user = $query->fetch(PDO::FETCH_ASSOC);
 
 if ($user) {
-    
-    echo "Succesvol ingelogd";
+
+    session_start();
+    if($user['role'] == 'admin'){
+        header('location: ../admin.php');
+    }
+    else{
+        header('location: ../index.php');
+    }
 
 }
 if (!$user) {
 
-    echo "Geen account gevonden";
-
-}
-if (!$pass) {
-
-    echo "Wachtwoord niet correct";
+    echo "Geen account met deze combinatie gevonden.";
 
 }

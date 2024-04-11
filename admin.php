@@ -83,6 +83,11 @@
 
         <div class="formulieradmin">
             <h1>Resarveringen</h1>
+            <h1>Verwijder een resarvering</h1>
+            <form class="formulieradmin" action="php/removeresarvering.php" method="POST">
+                <input type="text" name="id" placeholder="Resarverings id">
+                <input type="submit" value="Verwijderen">
+            </form>
             <?php
 
             $sql = "SELECT * FROM resarveringen";
@@ -102,20 +107,57 @@
                         echo '<h1 class="pruductenadmin"> tijd: ' . $value2 . '</h1>';
                     } elseif ($key1 == 'extra') {
                         echo '<h1 class="pruductenadmin"> Extra: ' . $value2 . '</h1>';
-                    }elseif ($key1 == 'id') {
-                        echo '<input type="hidden" value=id'. $value2 .'>';
+                    } elseif ($key1 == 'id') {
+                        echo '<h1 class="pruductenadmin"> id: ' . $value2 . '</h1>';
                     }
 
                 }
 
-                echo'<input action="php/removeresarvering.php" type="submit" value="Verwijder resarvering">';
+
 
             }
-
             ?>
         </div>
 
-    </div> 
+        <div>
+        <h1>Contact</h1>
+            <h1>Verwijder een Contact ding</h1>
+            <form class="formulieradmin" action="php/removecontact.php" method="POST">
+                <input type="text" name="id" placeholder="Resarverings id">
+                <input type="submit" value="Verwijderen">
+            </form>
+            <?php
+
+            $sql = "SELECT * FROM contact";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute();
+            $results = $stmt->fetchAll();
+
+
+            foreach ($results as $key => $value) {
+
+                foreach ($value as $key1 => $value2) {
+                    if ($key1 == 'naam') {
+                        echo '<h1 class="pruductenadmin"> naam: ' . $value2 . '</h1>';
+                    } elseif ($key1 == 'email') {
+                        echo '<h1 class="pruductenadmin"> email: ' . $value2 . '</h1>';
+                    } elseif ($key1 == 'tel') {
+                        echo '<h1 class="pruductenadmin"> tel: ' . $value2 . '</h1>';
+                    } elseif ($key1 == 'info') {
+                        echo '<h1 class="pruductenadmin"> info: ' . $value2 . '</h1>';
+                    } elseif ($key1 == 'id') {
+                        echo '<h1 class="pruductenadmin"> id: ' . $value2 . '</h1>';
+                    }
+
+                }
+
+
+
+            }
+            ?>
+        </div>
+
+    </div>
 
 
 
