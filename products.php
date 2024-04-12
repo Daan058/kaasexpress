@@ -36,9 +36,6 @@ include ('connection.php');
             echo '<h1 class="product-name">' . htmlspecialchars($product['name'], ENT_QUOTES, 'UTF-8') . '</h1>';
             echo '<h2 class="product-description">' . htmlspecialchars($product['description'], ENT_QUOTES, 'UTF-8') . '</h2>';
             echo '<h3 class="product-price"> €' . htmlspecialchars($product['price'], ENT_QUOTES, 'UTF-8') . '</h3>';
-            if (!empty($product['img'])) {
-                echo '<img src="path_to_images/' . htmlspecialchars($product['img'], ENT_QUOTES, 'UTF-8') . '" alt="' . htmlspecialchars($product['name'], ENT_QUOTES, 'UTF-8') . '">';
-            }
             echo '</div>';
         }
         ?>

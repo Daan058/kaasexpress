@@ -169,9 +169,8 @@ footer {
 }
 
 .product {
-    border: 1px solid #ddd;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color:   #FFA500;
     margin: 20px;
     box-sizing: border-box;
     width: calc(33.333% - 120px);
@@ -295,7 +294,95 @@ footer {
     color: white;
 }
 
+
+/* homepagina Styles */
+
+.hero {
+    color: white;
+    margin-top: -100px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kaasknopp{
+    font-weight: bolder;
+    font-size: xx-large;
+    background-color: #FFA500;
+    color: #333399;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #367C39;
+}
+
+.intro, .reviews {
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+.review-grid blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #4CAF50;
+    padding-left: 20px;
+    margin: 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+.review-grid span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
 /* Responsive Design */
+
+
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 1200px) {
     .product {
         width: calc(50% - 80px);
