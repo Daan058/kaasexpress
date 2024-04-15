@@ -16,14 +16,14 @@ include ('connection.php');
         </div>
     </div>
 
-    <!-- Over Ons / Introductie -->
+    
     <section class="intro">
         <h2>Onze Missie</h2>
         <p>Met passie voor kaas en oog voor kwaliteit leveren wij alleen het beste voor echte kaasliefhebbers.</p>
     </section>
 
 
-    <!-- Klantenreviews -->
+
     <section class="reviews">
         <h2>Klantenervaringen</h2>
         <div class="review-grid">
