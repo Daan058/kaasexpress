@@ -30,14 +30,14 @@ include ('connection.php');
             $results = $stmt->fetchAll();
         }
 
-        
         foreach ($results as $product) {
             echo '<div class="product">';
-            echo '<h1 class="product-name">' . htmlspecialchars($product['name'], ENT_QUOTES, 'UTF-8') . '</h1>';
-            echo '<h2 class="product-description">' . htmlspecialchars($product['description'], ENT_QUOTES, 'UTF-8') . '</h2>';
-            echo '<h3 class="product-price"> €' . htmlspecialchars($product['price'], ENT_QUOTES, 'UTF-8') . '</h3>';
+            echo '<h1 class="product-name">' . $product['name'] . '</h1>';
+            echo '<h2 class="product-description">' . $product['description'] . '</h2>';
+            echo '<h3 class="product-price"> €' . $product['price'] . '</h3>';
             echo '</div>';
         }
+        
         ?>
     </div>
 
